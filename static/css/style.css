@@ -5,6 +5,11 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+*::selection {
+    background: #4400ff;
+    color: #fff;
+}
+
 html,
 body {
     overflow-y: hidden;
