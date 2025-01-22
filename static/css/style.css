@@ -129,18 +129,28 @@ h2 {
 }
 
 .result-row div {
-    width: 45%;
+    width: 32%;
+    /* Ensure 3 columns per row */
 }
 
 @media (max-width: 600px) {
     .result-row {
-        flex-direction: column;
-        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .result-row div {
-        width: 100%;
+        width: 32%;
+        /* Adjust each column to 32% of the available space */
         margin-bottom: 10px;
+        /* Margin between items */
+    }
+
+    /* Ensures that no column goes beyond 3 per row */
+    .result-row:nth-child(3n) {
+        margin-right: 0;
+        /* Removes margin on the last item of each row */
     }
 }
 
@@ -231,4 +241,17 @@ input:-ms-autofill {
     max-width: 600px;
     z-index: 1;
     animation: expandContainer 0.5s ease-out forwards;
+}
+
+
+@media(max-width:515px) {
+    .result-row div {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:460px) {
+    .result-row div {
+        font-size: 10px;
+    }
 }
