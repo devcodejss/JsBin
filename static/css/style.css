@@ -249,9 +249,3 @@ input:-ms-autofill {
         font-size: 14px;
     }
 }
-
-@media(max-width:460px) {
-    .result-row div {
-        font-size: 10px;
-    }
-}

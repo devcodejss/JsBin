@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div><strong>Emisor</strong> <br> ${data.Issuer}</div>
                         </div>
                         <div class="result-row">
-                            <div><strong>Nivel de Tarjeta:</strong> <br> ${data.CardTier}</div>
+                            <div><strong>Nivel</strong> <br> ${data.CardTier}</div>
                             <div><strong>País</strong> <br> ${data.Country.Name}</div>
                             <div><strong>Luhn</strong> <br> ${data.Luhn}</div>
                         </div>
