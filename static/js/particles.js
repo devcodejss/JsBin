@@ -1,4 +1,3 @@
-// Configuración de partículas para el fondo
 particlesJS('particles-js', {
     "particles": {
         "number": {
@@ -46,13 +45,13 @@ particlesJS('particles-js', {
         "move": {
             "enable": true,
             "speed": 6,
-            "direction": "center", // Las partículas se acercan al cursor
+            "direction": "center",
             "random": false,
             "straight": false,
             "out_mode": "out",
             "bounce": false,
             "attract": {
-                "enable": true, // Activar atracción hacia el cursor
+                "enable": true,
                 "rotateX": 600,
                 "rotateY": 1200
             }
@@ -63,11 +62,11 @@ particlesJS('particles-js', {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "attract" // Cambié a "attract" para que las partículas se acerquen al cursor
+                "mode": "attract"
             },
             "onclick": {
                 "enable": true,
-                "mode": "push" // Explosión de partículas al hacer clic
+                "mode": "push"
             }
         },
         "modes": {
@@ -89,7 +88,7 @@ particlesJS('particles-js', {
                 "duration": 0.4
             },
             "push": {
-                "particles_nb": 8 // Número de partículas en la explosión (reducido)
+                "particles_nb": 8
             },
             "remove": {
                 "particles_nb": 2
